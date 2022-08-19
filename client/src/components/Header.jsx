@@ -1,9 +1,5 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Button,Container,Nav,Navbar,NavDropdown,Form } from 'react-bootstrap';
+
 import "../css/header.css"
 
 function Header() {
@@ -30,7 +26,7 @@ function Header() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
+            <Nav.Link href="#" >
               Link
             </Nav.Link>
           </Nav>
