@@ -9,14 +9,13 @@ import Header from './components/Header';
 function App() {
   return (
     <div className='appContainer'>
-      <Header>
-    </Header>
-
-
-
-    <Footer>
-
-    </Footer>
+      <Header/>
+     <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Categories"element={<Categories />} />
+        <Route path="/Adds" element={<Adds />} /> 
+      </Routes>
+    <Footer/>
     </div>
   )
 }
