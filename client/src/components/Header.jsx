@@ -15,15 +15,15 @@ function Header() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav>
-            <Nav.Link href="/">Hem</Nav.Link>
-            <Nav.Link href="Categories">Sätt in annons</Nav.Link>
-            <Nav.Link href="Adds">Mina annonser</Nav.Link>
+            <Nav.Link className='navlink' href="/">Hem</Nav.Link>
+            <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
+            <Nav.Link className='navlink' href="Adds">Mina annonser</Nav.Link>
           </Nav>
           <Form className="d-flex btn_main">
             <Form.Control
               type="search"
               placeholder="Sök"
-              className="me-4"
+              className="me-2"
               aria-label="Search"
             />
             <Button href="/AddInfo" variant="dark">Logga in</Button>

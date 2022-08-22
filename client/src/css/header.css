@@ -14,12 +14,13 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 100px;
     background-color: #f8d815;
 }
 
 .logo {
     padding-left: 3%;
+    text-transform: uppercase;
 }
 
 .btn_main {
@@ -30,4 +31,11 @@ html,body {
     margin: 10px 0;
 }
 
+.navlink {
+    width: auto;
+    letter-spacing: 1px;
+}
 
+.form-control {
+    border: none;
+}
