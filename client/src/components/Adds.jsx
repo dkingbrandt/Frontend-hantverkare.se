@@ -2,12 +2,16 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import { get, post, put, erase } from "./../utility/fetchHealper"
 import "./../css/Adds.css"
+import Form from "./Form"
 export default function Adds() {
   const [id, setId] =useState("");
   const [adds, setAdds] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("");
+  const [popUp, setPopUp] = useState(true);
+
+
 
   function showDetail(id){
 
@@ -61,18 +65,23 @@ export default function Adds() {
           </div>
         )
       })}
+      <div className='blurr' >
+      <div className='popUp'>
+        
+          <div>
+             <p class="popUp--close">&times;  </p>
+            <img className='popUp--img' src={img}></img>
+            <h1 className='popUp--title'>{title}</h1>
+            <p className='popUp--description'>{description}</p>
+            </div>
 
-      <div className='blurr'>
-            <img src={img}></img>
-            <h1>{title}</h1>
-            <p>{description}</p>
 
-
-            <
+          <Form/>
           
             <button>
               chatt
             </button>
+          </div>
           </div>
 
     </div>
