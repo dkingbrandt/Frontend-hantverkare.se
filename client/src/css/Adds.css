@@ -1,0 +1,42 @@
+.addsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 90%;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.textBox {
+
+  max-width: 100%;
+}
+
+.addsDescription {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+
+.addsHeading {
+  padding-left: 30px;
+}
+
+.addsImg {
+  width: 200px;
+  height: 150px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.mainHeading {
+  margin-left: 35%;
+}
