@@ -40,3 +40,12 @@
 .mainHeading {
   margin-left: 35%;
 }
+.addsBtn{
+  width: 200px;
+  height: 40px;
+  margin-top: 5%;
+  margin-right: 2%;
+  border-radius:10px ;
+  color:white;
+  background-color: black;
+}

@@ -26,7 +26,7 @@ export default function Adds() {
               <p className='addsDescription'>{add.description}</p>
             </div>
 
-
+           <button className='addsBtn'>mer info</button>
 
 
           </div>
