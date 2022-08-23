@@ -33,7 +33,7 @@ body{
     position: fixed;
     flex-direction: column;
     bottom: 80px;
-    right: 17%;
+    right: 15%;
     width: 27%;
 }
 
@@ -64,4 +64,11 @@ body{
     height: 60px;
     border-radius: 3px;
     font-weight: 600;
+}
+
+.main_btn:hover {
+    background-color: #fff4ab;
+    color: #000000;
+    border: #000000 2px solid;
+    font-weight: 700;
 }
