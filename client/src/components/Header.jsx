@@ -8,31 +8,31 @@ import "../css/header.css"
 
 function Header() {
   return (
-      <div className='appContainer'>
+    <div className='appContainer'>
       <Navbar expand="lg">
-      <Container fluid>
-        <Navbar.Brand className="logo" href="/">hantverkare.se</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav>
-            <Nav.Link className='navlink' href="/">Hem</Nav.Link>
-            <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
-            <Nav.Link className='navlink' href="Adds">Mina annonser</Nav.Link>
-          </Nav>
-          <Form className="d-flex btn_main">
-            <Form.Control
-              type="search"
-              placeholder="Sök"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button href="/AddInfo" variant="dark">Logga in</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        <Container fluid>
+          <Navbar.Brand className="logo" href="/">hantverkare.se</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav>
+              <Nav.Link className='navlink' href="/">Hem</Nav.Link>
+              <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
+              <Nav.Link className='navlink' href="Adds">Hitta Tjänster</Nav.Link>
+            </Nav>
+            <Form className="d-flex btn_main">
+              <Form.Control
+                type="search"
+                placeholder="Sök"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button href="/AddInfo" variant="dark">Logga in</Button>
+            </Form>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
-  ) 
+  )
 }
 
 export default Header;
