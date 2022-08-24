@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-
+import './../css/Formpopup.css'
 function FormPopUp() {
   return (
 <Form>
@@ -11,12 +11,12 @@ function FormPopUp() {
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Example textarea</Form.Label>
-        <Form.Control as="textarea" rows={3} />
+        <Form.Control placeholder='Skriv något...' as="textarea" rows={3} />
       </Form.Group>
-      <button>
+      <button className='formBtn'>
         chatt
       </button>
-      <button>
+      <button className='formBtn'>
         skicka
       </button>
     </Form>
