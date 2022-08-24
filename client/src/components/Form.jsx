@@ -13,6 +13,12 @@ function FormPopUp() {
         <Form.Label>Example textarea</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
+      <button>
+        chatt
+      </button>
+      <button>
+        skicka
+      </button>
     </Form>
   );
 }

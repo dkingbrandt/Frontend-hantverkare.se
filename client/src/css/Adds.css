@@ -64,7 +64,7 @@
       */
   
       
-      transition: all .3s;
+    transition: all .5s;
   
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
@@ -86,7 +86,7 @@
       z-index: 3;
 opacity: 1;
   visibility: visible;
-  transition: all .3s;
+  
 }
 
 .popUp--close{
