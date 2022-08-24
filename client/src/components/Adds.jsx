@@ -100,9 +100,7 @@ export default function Adds() {
 
           <Form/>
           
-            <button>
-              chatt
-            </button>
+            
           </div>
           </div>
 
