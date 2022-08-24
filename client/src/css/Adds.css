@@ -40,3 +40,79 @@
 .mainHeading {
   margin-left: 35%;
 }
+.addsBtn{
+  width: 200px;
+  height: 40px;
+  margin-top: 5%;
+  margin-right: 2%;
+  border-radius:10px ;
+  color:white;
+  background-color: black;
+}
+
+.blurr{
+   
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+     top: 0;
+     left: 0;
+
+    /*  opacity: 0;
+     visibility:hidden;
+      z-index: -2;
+      */
+  
+      
+    transition: all .5s;
+  
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0,0,0, .3); 
+    
+}
+.popUp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5%;
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      z-index: 3;
+opacity: 1;
+  visibility: visible;
+  
+}
+
+.popUp--close{
+  color: black;
+    position: absolute;
+    top:5px;
+    left: 95%;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+
+}
+
+.popUp--close:hover{
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.521);
+}
+
+.popUp--img{
+  width: 400px;
+  height: auto;
+  
+}
+.popUp--title{
+margin-top: 3%;
+margin-left: 17%;
+  
+}
