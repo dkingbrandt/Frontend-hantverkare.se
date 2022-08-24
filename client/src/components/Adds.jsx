@@ -4,7 +4,7 @@ import { get, post, put, erase } from "./../utility/fetchHealper"
 import "./../css/Adds.css"
 import Form from "./Form"
 export default function Adds() {
-  const [id, setId] =useState("");
+  const [id, setId] = useState("");
   const [adds, setAdds] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -13,21 +13,21 @@ export default function Adds() {
 
 
 
-  function showDetail(id){
+  function showDetail(id) {
 
-    const index = adds[id]  
-    if(index == adds[id]){
-      
+    const index = adds[id]
+    if (index == adds[id]) {
+
       setTitle(adds[id].heading)
       setDescription(adds[id].description)
       setImg(adds[id].img)
-      
+
       console.log(adds[id].heading);
     }
   }
 
-  const handlePopUp = () =>{
-   setPopUp(current => !current); //toggle
+  const handlePopUp = () => {
+    setPopUp(current => !current); //toggle
   }
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function Adds() {
 
   }, [])
   useEffect(() => {
-    
+
 
   }, [])
 
@@ -47,63 +47,63 @@ export default function Adds() {
 
           <div>
 
-          <div className='addsContainer' key={id}  >
+            <div className='addsContainer' key={id}  >
 
-            <img className='addsImg' src={add.img}></img>
+              <img className='addsImg' src={add.img}></img>
 
 
-            <div className='textBox'>
-              
-              <h3 className='addsHeading'>{add.heading}</h3>
-              <p className='addsDescription'>{add.description}</p>
-              
+              <div className='textBox'>
+
+                <h3 className='addsHeading'>{add.heading}</h3>
+                <p className='addsDescription'>{add.description}</p>
+
+              </div>
+
+              <button className='addsBtn' id={id}
+                onClick={() => {
+                  showDetail(id);
+                  handlePopUp();
+                }}
+              >mer info</button>
+
+
             </div>
 
-           <button className='addsBtn' id={id}   
-           onClick={ ()=>{
-            showDetail(id);
-            handlePopUp();
-          }}
-          >mer info</button>
 
 
-          </div>
-
-         
-        
           </div>
         )
       })}
 
-{/* opacity: 0;
+      {/* opacity: 0;
      visibility:hidden;
       z-index: -2; */}
 
-      <div className='blurr' 
-      style={{
+      <div className='blurr'
+        style={{
           opacity: popUp ? '1' : '0',
           visibility: popUp ? 'visible' : 'hidden',
           zIndex: popUp ? '2' : '-2',
-          
+
         }}
-      
+
       >
-      <div className='popUp'>
-        
+        <div className='popUp'>
+
           <div>
-             <p class="popUp--close" onClick={handlePopUp} >&times; </p>
+            <p className="popUp--close" onClick={handlePopUp} >&times; </p>
             <img className='popUp--img' src={img}></img>
             <h1 className='popUp--title'>{title}</h1>
             <p className='popUp--description'>{description}</p>
-            </div>
-
-
-          <Form/>
-          
-            
-          </div>
           </div>
 
-    </div>
+
+          <Form />
+
+
+        </div>
+      </div>
+
+    </div >
   )
 }
