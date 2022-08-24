@@ -114,6 +114,18 @@ opacity: 1;
 }
 .popUp--title{
 margin-top: 3%;
-margin-left: 17%;
+margin-left: 10%;
   
+}
+.formBtn{
+  width: 200px;
+  height: 40px;
+  margin-top: 5%;
+  margin-left: 4%;
+  border-radius:10px ;
+  color:white;
+  background-color: black;
+}
+.popUp--img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

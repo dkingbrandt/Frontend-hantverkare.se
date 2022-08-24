@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import './../css/Formpopup.css'
+import './../css/Adds.css'
 function FormPopUp() {
   return (
 <Form>
