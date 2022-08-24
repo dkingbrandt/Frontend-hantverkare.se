@@ -3,10 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import  {useState} from 'react';
+import React from 'react';
 import "../css/header.css"
 
+
+
 function Header() {
+  
+const [popUp, setPopUp] = useState(true);
+  const handlePopUp = () =>{
+    setPopUp(current => !current); //toggle
+   }
+    
   return (
     <div className='appContainer'>
       <Navbar expand="lg">
@@ -27,6 +36,16 @@ function Header() {
                 aria-label="Search"
               />
               <Button href="/AddInfo" variant="dark">Logga in</Button>
+              <Button href="/AddInfo" variant="dark"   onClick={ ()=>{
+            handlePopUp();
+          }} >Registrera</Button>
+              <div>
+             <p class="popUp--close" onClick={handlePopUp} >&times; </p>
+            <img className='popUp--img' ></img>
+            <h1 className='popUp--title'></h1>
+            <p className='popUp--description'></p>
+            </div>
+
             </Form>
           </Navbar.Collapse>
         </Container>
