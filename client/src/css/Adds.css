@@ -51,15 +51,17 @@
 }
 
 .blurr{
-    z-index: 2;
+   
       height: 100vh;
       width: 100%;
       position: fixed;
      top: 0;
      left: 0;
+
     /*  opacity: 0;
-     visibility:hidden; */
-     
+     visibility:hidden;
+      z-index: -2;
+      */
   
       
       transition: all .3s;
@@ -97,6 +99,11 @@ opacity: 1;
     display: inline-block;
     line-height: 1;
 
+}
+
+.popUp--close:hover{
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.521);
 }
 
 .popUp--img{

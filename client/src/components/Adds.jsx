@@ -26,6 +26,10 @@ export default function Adds() {
     }
   }
 
+  const handlePopUp = () =>{
+   setPopUp(current => !current); //toggle
+  }
+
   useEffect(() => {
     get("http://127.0.0.1:8080/myPage").then((response) => setAdds(response.data))
 
@@ -55,7 +59,12 @@ export default function Adds() {
               
             </div>
 
-           <button className='addsBtn' id={id} onClick={()=> showDetail(id)}>mer info</button>
+           <button className='addsBtn' id={id}   
+           onClick={ ()=>{
+            showDetail(id);
+            handlePopUp();
+          }}
+          >mer info</button>
 
 
           </div>
@@ -65,11 +74,24 @@ export default function Adds() {
           </div>
         )
       })}
-      <div className='blurr' >
+
+{/* opacity: 0;
+     visibility:hidden;
+      z-index: -2; */}
+
+      <div className='blurr' 
+      style={{
+          opacity: popUp ? '1' : '0',
+          visibility: popUp ? 'visible' : 'hidden',
+          zIndex: popUp ? '2' : '-2',
+          
+        }}
+      
+      >
       <div className='popUp'>
         
           <div>
-             <p class="popUp--close">&times;  </p>
+             <p class="popUp--close" onClick={handlePopUp} >&times; </p>
             <img className='popUp--img' src={img}></img>
             <h1 className='popUp--title'>{title}</h1>
             <p className='popUp--description'>{description}</p>
