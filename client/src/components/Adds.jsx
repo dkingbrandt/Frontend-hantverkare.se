@@ -9,7 +9,7 @@ export default function Adds() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("");
-  const [popUp, setPopUp] = useState(true);
+  const [popUp, setPopUp] = useState(false);
 
 
 
