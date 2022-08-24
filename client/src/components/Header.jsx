@@ -12,8 +12,8 @@ import '../css/Adds.css'
 
 function Header() {
   
-const [registrera, setRegistrera] = useState(true);
-const [login, setLogin] = useState(true);
+const [registrera, setRegistrera] = useState(false);
+const [login, setLogin] = useState(false);
 
 
   const handlePopUp = (state) =>{
