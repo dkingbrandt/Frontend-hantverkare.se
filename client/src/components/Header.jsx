@@ -6,15 +6,20 @@ import Navbar from 'react-bootstrap/Navbar';
 import  {useState} from 'react';
 import React from 'react';
 import "../css/header.css"
+import '../css/Adds.css'
 
 
 
 function Header() {
   
-const [popUp, setPopUp] = useState(true);
-  const handlePopUp = () =>{
-    setPopUp(current => !current); //toggle
+const [registrera, setRegistrera] = useState(true);
+const [login, setLogin] = useState(true);
+
+
+  const handlePopUp = (state) =>{
+    state(current => !current); //toggle
    }
+ 
     
   return (
     <div className='appContainer'>
@@ -35,16 +40,67 @@ const [popUp, setPopUp] = useState(true);
                 className="me-2"
                 aria-label="Search"
               />
-              <Button href="/AddInfo" variant="dark">Logga in</Button>
-              <Button href="/AddInfo" variant="dark"   onClick={ ()=>{
-            handlePopUp();
-          }} >Registrera</Button>
-              <div>
-             <p class="popUp--close" onClick={handlePopUp} >&times; </p>
+              <Button  variant="dark"  onClick={ ()=>{
+            handlePopUp(setLogin);}}>Logga in</Button>
+                   <div className='blurr' 
+      style={{
+          opacity: login ? '1' : '0',
+          visibility: login ? 'visible' : 'hidden',
+          zIndex: login ? '2' : '-2',
+          
+        }}
+      
+      >
+      <div className='popUp'>
+        
+          <div>
+             <p class="popUp--close"  onClick={ ()=>{
+            handlePopUp(setLogin);}}
+             >&times; </p>
             <img className='popUp--img' ></img>
-            <h1 className='popUp--title'></h1>
-            <p className='popUp--description'></p>
+            <h1 className='popUp--title'>hello2</h1>
+            <p className='popUp--description'>world2</p>
             </div>
+
+
+       
+          
+            
+          </div>
+          </div>
+              
+
+              <Button  variant="dark"   onClick={ ()=>{
+            handlePopUp(setRegistrera);
+
+
+          }} >Registrera</Button>
+
+            <div className='blurr' 
+      style={{
+          opacity: registrera ? '1' : '0',
+          visibility: registrera ? 'visible' : 'hidden',
+          zIndex: registrera ? '2' : '-2',
+          
+        }}
+      
+      >
+      <div className='popUp'>
+        
+          <div>
+             <p class="popUp--close" onClick={ ()=>{
+            handlePopUp(setRegistrera);}}>&times; </p>
+            <img className='popUp--img' ></img>
+            <h1 className='popUp--title'>hello</h1>
+            <p className='popUp--description'>world</p>
+            </div>
+
+
+       
+          
+            
+          </div>
+          </div>
 
             </Form>
           </Navbar.Collapse>
