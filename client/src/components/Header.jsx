@@ -30,8 +30,8 @@ function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav>
               <Nav.Link className='navlink' href="/">Hem</Nav.Link>
-              {/* <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
-              <Nav.Link className='navlink' href="Adds">Mina Tjänster</Nav.Link> */}
+              <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
+              <Nav.Link className='navlink' href="Adds">Mina Tjänster</Nav.Link>
             </Nav>
               <Form.Control
                 type="search"
