@@ -12,7 +12,6 @@ html,body {
 
 .navbar {
     display: flex;
-    align-items: center;
     height: 100px;
     background-color: #f8d815;
 }
@@ -35,6 +34,36 @@ html,body {
     text-align: center;
 }
 
-.form-control {
+.form {
     border: none;
 }
+
+.Buttons_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-nav {
+    padding-right: 30px;
+}
+
+.btn_register {
+    margin: 10px 0;
+}
+
+
+/* MEDIA QUERIES To Do */
+
+/* .navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.navbar-collapse {
+    width: 100%;
+    background-color:#f8d815;
+    padding: 50px;
+    margin-top: 12px;
+} */

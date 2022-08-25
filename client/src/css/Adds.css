@@ -1,18 +1,24 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
 .addsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: scroll;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin: 30px;
   width: 90%;
-
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .textBox {
 
-  max-width: 100%;
+max-width: 100%;
 }
 
 .addsDescription {
@@ -36,6 +42,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  width: 100%;
 }
 
 .mainHeading {

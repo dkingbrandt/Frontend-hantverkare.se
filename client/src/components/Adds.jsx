@@ -45,9 +45,7 @@ export default function Adds() {
       {adds.map((add, id) => {
         return (
 
-          <div>
-
-            <div className='addsContainer' key={id}  >
+            <div className='addsContainer' key={id}>
 
               <img className='addsImg' src={add.img}></img>
 
@@ -69,9 +67,6 @@ export default function Adds() {
 
             </div>
 
-
-
-          </div>
         )
       })}
 

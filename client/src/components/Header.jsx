@@ -30,18 +30,18 @@ function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav>
               <Nav.Link className='navlink' href="/">Hem</Nav.Link>
-              <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
-              <Nav.Link className='navlink' href="Adds">Hitta Tjänster</Nav.Link>
+              {/* <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
+              <Nav.Link className='navlink' href="Adds">Mina Tjänster</Nav.Link> */}
             </Nav>
-            <Form className="d-flex btn_main">
               <Form.Control
                 type="search"
                 placeholder="Sök"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="dark" onClick={() => {
-                handlePopUp(setLogin);
+            <Container className='Buttons_container'>
+              <Button className='btn_register' size="sm" variant="dark" onClick={() => {
+                handlePopUp(setLogin);              
               }}>Logga in</Button>
               <div className='blurr'
                 style={{
@@ -72,7 +72,7 @@ function Header() {
               </div>
 
 
-              <Button variant="dark" onClick={() => {
+              <Button size="sm" variant="outline-secondary" onClick={() => {
                 handlePopUp(setRegistrera);
 
 
@@ -105,7 +105,8 @@ function Header() {
                 </div>
               </div>
 
-            </Form>
+              </Container>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
