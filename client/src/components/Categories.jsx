@@ -15,7 +15,7 @@ export default function Categories() {
         <Col className="mr-1 ">
           <img
             className="categoryImg"
-            src="./images/hammer.ico"
+            src="./images/Worker.png"
             alt="carpenter"
           />
 
@@ -26,7 +26,7 @@ export default function Categories() {
         <Col className="mr-1 ">
           <img
             className="categoryImg"
-            src="./images/paintbrush.png"
+            src="./images/Worker.png"
             alt="painter"
           />
           <Button className="mt-2 cat-btn mr-1 " variant="dark">
