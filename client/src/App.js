@@ -1,27 +1,31 @@
+
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-
+import Categories from "./components/Categories";
 import Adds from "./components/Adds";
-import AddInfo from "./components/AddInfo";
+import MinSida from "./components/MinSida"
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Header"
 
-import "./css/App.css";
+
+
+import './css/App.css'
+
 
 function App() {
   return (
-    <div className="appContainer">
+    <div className='appContainer'>
       <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />
-
+        <Route path="/Categories" element={<Categories />} />
         <Route path="/Adds" element={<Adds />} />
-        <Route path="/AddInfo" element={<AddInfo />} />
+        <Route path="/MinSida" element={<MinSida />} />
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
