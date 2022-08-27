@@ -41,10 +41,10 @@ export default function Adds() {
 
   return (
     <div className='mainContainer'>
-      <h2 className='mainHeading'>Tillgängliga Tjänster</h2>
+      <h2 className='title_adds'>Tillgängliga Tjänster</h2>
+      <h2 className='mainHeading'></h2>
       {adds.map((add, id) => {
         return (
-
             <div className='addsContainer' key={id}>
 
               <img className='addsImg' src={add.img}></img>
@@ -62,11 +62,10 @@ export default function Adds() {
                   showDetail(id);
                   handlePopUp();
                 }}
-              >mer info</button>
+              >Mer info</button>
 
 
             </div>
-
         )
       })}
 

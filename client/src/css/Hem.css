@@ -13,31 +13,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
-
 }
 
 .Home {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .main_information {
     display: flex;
     flex-direction: column;
-    width: 35%;
-    margin-left: 15%;
-    margin-top: 7%;
+    max-width: 350px;
+    margin-top: 3%;
 }
 
 .main_images {
     display: flex;
-    position: fixed;
     flex-direction: column;
-    bottom: 80px;
-    right: 15%;
-    width: 27%;
+    margin-left: 6%;
+    margin-bottom: 0;
+    max-width: 400px;
+}
+
+.image_homepage_stars {
+    position: relative;
+    z-index: -1;
 }
 
 .main_h1 {

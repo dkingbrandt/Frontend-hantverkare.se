@@ -16,7 +16,6 @@ function App() {
   return (
     <div className='appContainer'>
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Categories" element={<Categories />} />

@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-body {
+body,html {
     font-family: 'Karla', sans-serif;
 }
 
@@ -14,6 +14,5 @@ body {
 .appContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 100vh;
 }

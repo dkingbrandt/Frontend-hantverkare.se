@@ -44,8 +44,6 @@ export default function MinSida() {
 
         >
           <div className='popUp'>
-
-
             <div>
               <p className="popUp--close" onClick={handlePopUp} >&times; </p>
               <img className='popUp--img' src={img}></img>

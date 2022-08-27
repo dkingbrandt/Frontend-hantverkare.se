@@ -10,8 +10,8 @@ export default function Home() {
             <button className='main_btn'>Hitta en tjänst</button>
         </div>
         <div className="main_images">
-          <img src="./images/Group_2.png" alt="Stars images" />
-          <img src="./images/Worker.png" alt="Main images" />          
+          <img className="image_homepage_stars" src="./images/Group_2.png" alt="Stars images" />
+          <img className="image_homepage_workers" src="./images/Worker.png" alt="Main images" />          
         </div>
     </div>  
     )
