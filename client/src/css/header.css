@@ -10,6 +10,10 @@ html,body {
     font-family: 'Karla', sans-serif;
 }
 
+.appContainer {
+    position: sticky;
+    top: 0;
+}
 
 .navbar {
     display: flex;
