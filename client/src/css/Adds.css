@@ -8,9 +8,15 @@
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.categoryImg {
+  height: 10rem;
+  width: 10rem;
+}
 
+.cat-btn {
+  width: 10rem;
+}
 .textBox {
-
   max-width: 100%;
 }
 
@@ -19,7 +25,6 @@
   padding-right: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
-
 }
 
 .addsHeading {

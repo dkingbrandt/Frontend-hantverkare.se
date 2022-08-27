@@ -12,7 +12,7 @@ export default function Home() {
         <h3 className="main_h3">
           Här hittar du yrkesverksamma som hjälper dig:
         </h3>
-        <Link to="/Categories">
+        <Link to="/Adds">
           <button className="main_btn">Hitta en tjänst</button>
         </Link>
       </div>
