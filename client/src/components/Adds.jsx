@@ -84,7 +84,7 @@ export default function Adds() {
           opacity: popUp ? '1' : '0',
           visibility: popUp ? 'visible' : 'hidden',
           zIndex: popUp ? '2' : '-2',
-
+        
         }}
 
       >

@@ -70,7 +70,7 @@
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0,0,0, .3); 
-    
+ 
 }
 .popUp{
   display: flex;
@@ -87,6 +87,7 @@
       z-index: 3;
 opacity: 1;
   visibility: visible;
+
   
 }
 
@@ -105,6 +106,7 @@ opacity: 1;
 .popUp--close:hover{
   cursor: pointer;
   color: rgba(0, 0, 0, 0.521);
+
 }
 
 .popUp--img{
