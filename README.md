@@ -1,4 +1,3 @@
 
 # Frontend-hantverkare.se
-
-HEJ
+```Javascript`
