@@ -30,4 +30,4 @@ To get your dependencies up to date, you need to run **npm install** in your ter
  ## How to start the project in the terminal
 
 
- Start the project in the terminal with the command npm start.
+ Start the project in the terminal with the command **npm start**.
