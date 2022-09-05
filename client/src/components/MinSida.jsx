@@ -74,8 +74,6 @@ const uploadImage = async () => {
 
         >
           <div className='popUp'>
-
-
             <div>
               <p className="popUp--close" onClick={handlePopUp} >&times; </p>
               <img className='popUp--img' src={imageUrl}></img>

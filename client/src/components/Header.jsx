@@ -9,7 +9,6 @@ import "../css/header.css"
 import '../css/Adds.css'
 
 
-
 function Header() {
 
   const [registrera, setRegistrera] = useState(false);
@@ -31,52 +30,65 @@ function Header() {
             <Nav>
               <Nav.Link className='navlink' href="/">Hem</Nav.Link>
               <Nav.Link className='navlink' href="Categories">Sätt in annons</Nav.Link>
-              <Nav.Link className='navlink' href="Adds">Hitta Tjänster</Nav.Link>
+              <Nav.Link className='navlink' href="Adds">Mina Tjänster</Nav.Link>
             </Nav>
-            <Form className="d-flex btn_main">
               <Form.Control
                 type="search"
                 placeholder="Sök"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="dark" onClick={() => {
-                handlePopUp(setLogin);
+
+            <Container className='Buttons_container'>
+              <Button className='btn_register' size="sm" variant="dark" onClick={() => {
+                handlePopUp(setLogin);              
               }}>Logga in</Button>
               <div className='blurr'
                 style={{
                   opacity: login ? '1' : '0',
                   visibility: login ? 'visible' : 'hidden',
                   zIndex: login ? '2' : '-2',
-
                 }}
-
               >
-                <div className='popUp'>
 
+                <div className='popup_form'>
                   <div>
-                    <p className="popUp--close" onClick={() => {
+                    <p className="popUp--close_form" onClick={() => {
                       handlePopUp(setLogin);
                     }}
                     >&times; </p>
-                    <img className='popUp--img' ></img>
-                    <h1 className='popUp--title'>hello2</h1>
-                    <p className='popUp--description'>world2</p>
+                    <div className="popup_login_form">
+                      <h2 className='popUp--title_form'>Logga in</h2>
+                      <Form>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                          <Form.Label>E-post</Form.Label>
+                          <Form.Control type="email" placeholder="Ange e-post" />
+                          {/* <Form.Text className="text-muted">
+                            We'll never share your email with anyone else.
+                          </Form.Text> */}
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                          <Form.Label>Lösenord</Form.Label>
+                          <Form.Control type="password" placeholder="Ange lösenord" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                          <Form.Check type="checkbox" label="Bekräfta" />
+                        </Form.Group>
+                        <Button variant="primary" type="submit">
+                          Logga in
+                        </Button>
+                      </Form>
+                    </div>
                   </div>
-
-
-
-
-
                 </div>
               </div>
 
 
-              <Button variant="dark" onClick={() => {
+              <Button size="sm" variant="outline-secondary" onClick={() => {
                 handlePopUp(setRegistrera);
-
-
               }} >Registrera</Button>
+
 
               <div className='blurr'
                 style={{
@@ -85,27 +97,45 @@ function Header() {
                   zIndex: registrera ? '2' : '-2',
 
                 }}
-
-              >
-                <div className='popUp'>
-
+              > 
+              <div className='popup_form'>
                   <div>
-                    <p className="popUp--close" onClick={() => {
+                    <p className="popUp--close_form" onClick={() => {
                       handlePopUp(setRegistrera);
-                    }}>&times; </p>
-                    <img className='popUp--img' ></img>
-                    <h1 className='popUp--title'>hello</h1>
-                    <p className='popUp--description'>world</p>
+                    }}
+                    >&times; </p>
+                    <div className="popup_login_form">
+                      <h2 className='popUp--title_form'>Registrera sig</h2>
+                      <Form>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                          <Form.Label>Ange E-post</Form.Label>
+                          <Form.Control type="email" placeholder="Ange e-post" />
+                          {/* <Form.Text className="text-muted">
+                            We'll never share your email with anyone else.
+                          </Form.Text> */}
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                          <Form.Label>Lösenord</Form.Label>
+                          <Form.Control type="password" placeholder="Minst 7 tecken" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                          <Form.Label>Upprepa lösenordet</Form.Label>
+                          <Form.Control type="password" placeholder="Minst 7 tecken" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                          <Form.Check type="checkbox" label="Bekräfta" />
+                        </Form.Group>
+                        <Button variant="primary" type="submit">
+                          Logga in
+                        </Button>
+                      </Form>
+                    </div>
                   </div>
-
-
-
-
-
                 </div>
               </div>
-
-            </Form>
+                
+              </Container>
           </Navbar.Collapse>
         </Container>
       </Navbar>

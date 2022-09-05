@@ -1,13 +1,27 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
 .addsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: scroll;
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 90%;
-
+  margin: 30px 50px;
+  padding: 40px;
+  width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.addsContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 9px;
+  cursor:pointer;
 }
 .categoryImg {
   height: 10rem;
@@ -18,7 +32,8 @@
   width: 10rem;
 }
 .textBox {
-  max-width: 100%;
+
+max-width: 100%;
 }
 
 .addsDescription {
@@ -26,6 +41,14 @@
   padding-right: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
+
+}
+
+.title_adds {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-weight: 700;
 }
 
 .addsHeading {
@@ -35,24 +58,24 @@
 .addsImg {
   width: 200px;
   height: 150px;
+  border-radius: 5px;
 }
 
 .mainContainer {
   display: flex;
   flex-direction: column;
   align-content: center;
+  width: 100%;
+  margin-bottom: 7%;
 }
 
-.mainHeading {
-  margin-left: 35%;
-}
 .addsBtn{
   width: 200px;
   height: 40px;
   margin-top: 5%;
   margin-right: 2%;
   border-radius:10px ;
-  color:white;
+  color: #f8d815;
   background-color: black;
 }
 
@@ -77,20 +100,21 @@
       background-color: rgba(0,0,0, .3); 
     
 }
-.popUp{
+.popUp {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 5%;
   background-color: rgb(255, 255, 255);
-  width: 80vw;
+  width: 70vw;
   height: 80vh;
   position: absolute;
   top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-      z-index: 3;
-opacity: 1;
+  left: 50%;
+  padding: 5%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 1;
   visibility: visible;
   
 }
@@ -118,7 +142,52 @@ opacity: 1;
   
 }
 .popUp--title{
-margin-top: 3%;
-margin-left: 17%;
-  
+margin-top: 4%;  
 }
+
+.popUp--description {
+  text-align: justify;
+  width: 400px;
+}
+
+
+/********************* FORM STILES *******************/
+
+.btn_form_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn_form_chatt {
+  width: 100px;
+  height: 40px;
+  background-color: #000000;
+  color: #f8d815;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+}
+
+.btn_form_chatt:hover {
+  background-color: #f8d815;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.btn_form_send {
+  width: 100px;
+  height: 40px;
+  background-color: #f8d815;
+  border: 2px solid #000000;
+  color: #000000;
+  margin: 0 0 0 10px;
+  border-radius: 5px;
+}
+
+.btn_form_send:hover {
+    background-color: #000000;
+    color: #f8d815;
+}
+
