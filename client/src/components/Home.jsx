@@ -1,5 +1,6 @@
-import React from 'react'
-import '../css/Hem.css'
+import React from "react";
+import "../css/Hem.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (

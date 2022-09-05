@@ -23,7 +23,14 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 9px;
   cursor:pointer;
 }
+.categoryImg {
+  height: 10rem;
+  width: 10rem;
+}
 
+.cat-btn {
+  width: 10rem;
+}
 .textBox {
 
 max-width: 100%;

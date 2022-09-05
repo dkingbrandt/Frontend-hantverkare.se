@@ -21,7 +21,7 @@ function Header() {
 
 
   return (
-    <div className='appContainer'>
+    <div className="appContainer">
       <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand className="logo" href="/">hantverkare.se</Navbar.Brand>
@@ -140,7 +140,7 @@ function Header() {
         </Container>
       </Navbar>
     </div>
-  )
+  );
 }
 
 export default Header;
