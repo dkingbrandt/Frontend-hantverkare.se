@@ -8,7 +8,9 @@ export default function Home() {
         <div className='main_information'>
             <h1 className='main_h1'>Behöver du måla en vägg eller montera ett skåp?</h1>
             <h3 className='main_h3'>Här hittar du yrkesverksamma som hjälper dig:</h3>
-            <button className='main_btn'>Hitta en tjänst</button>
+            <Link to="/Adds">
+              <button className="main_btn">Hitta en tjänst</button>
+            </Link>
         </div>
         <div className="main_images">
           <img className="image_homepage_stars" src="./images/Group_2.png" alt="Stars images" />

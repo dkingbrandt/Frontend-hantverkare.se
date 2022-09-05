@@ -39,7 +39,7 @@ export default function Adds() {
 
   return (
     <div className="mainContainer">
-      <h2 className="mainHeading">Tillgängliga Tjänster</h2>
+      <h2 className="title_adds">Tillgängliga Tjänster</h2>
       <div className="mainCategoryContainer">
         <NavLink className="navlink" href="/">
           Gå tillbaka
