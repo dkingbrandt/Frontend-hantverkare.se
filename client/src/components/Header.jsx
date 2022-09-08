@@ -43,7 +43,9 @@ function Header() {
               <Button variant="dark" onClick={() => {
                 handlePopUp(setLogin);
               }}>Logga in</Button>
-              <div className='blurr'
+              <div className='blurr' onClick={() => {
+                      handlePopUp(setLogin);
+                    }}
                 style={{
                   opacity: login ? '1' : '0',
                   visibility: login ? 'visible' : 'hidden',
@@ -78,7 +80,9 @@ function Header() {
 
               }} >Registrera</Button>
 
-              <div className='blurr'
+              <div className='blurr' onClick={() => {
+                      handlePopUp(setRegistrera);
+                    }}
                 style={{
                   opacity: registrera ? '1' : '0',
                   visibility: registrera ? 'visible' : 'hidden',
